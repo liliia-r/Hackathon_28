@@ -1,9 +1,8 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-@import 'helpers/variables';
-@import 'helpers/placeholders';
-@import 'helpers/mixins';
-@import 'normalize';
-@import 'fonts';
-@import 'base';
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './normalize';
+@import './fonts';
+@import './base';
