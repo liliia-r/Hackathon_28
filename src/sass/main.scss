@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * Все паршалы импортировать в этот файл
  */
@@ -12,3 +13,17 @@
 @import './components/section__subtitle';
 @import './components/features__list';
 @import './components/list__item';
+=======
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './normalize';
+@import './fonts';
+@import './base';
+
+
+@import './components/customers';
+@import './components/footer'
+>>>>>>> develop
