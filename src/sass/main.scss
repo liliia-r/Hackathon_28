@@ -6,3 +6,9 @@
 @import './normalize';
 @import './fonts';
 @import './base';
+
+/*             features                */
+@import './components/section__heading';
+@import './components/section__subtitle';
+@import './components/features__list';
+@import './components/list__item';
