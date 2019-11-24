@@ -1,3 +1,4 @@
+
 /*
  * Все паршалы импортировать в этот файл
  */
@@ -7,12 +8,15 @@
 @import './fonts';
 @import './base';
 
+
+@import './components/header.scss';
 /*             features                */
 @import './components/section__heading';
 @import './components/section__subtitle';
 @import './components/features__list';
 @import './components/list__item';
 
+
+
 @import './components/customers';
 @import './components/footer'
-
