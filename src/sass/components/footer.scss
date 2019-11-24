@@ -1,0 +1,254 @@
+.footer {
+  background-image: url(../images/footer/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 36px;
+  color: $color-primary-accents;
+  font-family: $secondary-font-stack;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding-top: 56px;
+
+  &::before {
+    @include pseudo();
+    margin-right: 16px;
+    width: 60px;
+    height: 2px;
+    background-color: $white-color;
+  }
+
+  &::after {
+    @include pseudo();
+    margin-left: 16px;
+    width: 60px;
+    height: 2px;
+    background-color: $white-color;
+  }
+}
+
+
+.footer__heading {
+  color: $white-color;
+  padding-bottom: 45px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact__form {
+  margin: 0 auto;
+  padding-bottom: 55px;
+}
+
+.form__input {
+  text-align: center;
+}
+
+.inputs {
+  width: 270px;
+  height: 44px;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.footer__contacts {
+  text-align: center;
+}
+
+.footer__contacts_touch {
+  color: $white-color;
+  font-family: $secondary-font-stack;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.footer__contacts_deskr {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: $secondary-font-stack;
+  font-size: 14px;
+  margin: 0 auto;
+  padding-bottom: 38px;
+  width: 280px;
+}
+
+.footer__social {
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer__icon {
+  height: 20px;
+  width: 12px;
+}
+
+.footer__social {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-icon {
+  display: flex;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  fill: $white-color;
+  margin: 0;
+  margin-right: 15px;
+}
+  
+.icon-facebook {
+  background-color: #3b5997;
+}
+  
+.icon-twitter {
+  background-color: #3ec2f3;
+}
+  
+.icon-linkedin {
+  background-color: #007ab9;
+}
+  
+.footer__icon {
+  padding-top: 12px;
+  width: 28px;
+  height: 28px;
+}  
+
+.footer__contacts-tel{
+  color: #bface2;
+  margin: 0 auto;
+}
+
+.footer__contacts-email{
+  color: #bface2;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.inputs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  padding-left: 22px;
+}
+
+.form__textarea {
+  text-align: center;
+}
+
+.text__message{
+  height: 179px;
+  width: 270px;
+  border-radius: 4px;
+  border-style: none;
+  margin-bottom: 40px;
+  text-align: start;
+  padding: 14px;
+  padding-left: 22px;
+  resize: none;
+}
+
+.form__button{
+  display: block;
+  width: 170px;
+  height: 50px;
+  background-color: $color-secondary-accents;
+  border-radius: 4px;
+  border-style: none;
+  color: $white-color;
+  font-size: 22px;
+  line-height: 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.form__button:hover {
+  background-color: #007ab9;
+  transition: all 0.2s linear;
+}
+
+
+input[type="email"]:valid {
+  color: $white-color;
+}
+
+input[type="email"]:invalid {
+  color: #dc2543;
+}
+
+.footer-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 85px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-text {
+  margin: 0 auto;
+  width: 215px;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1145px;
+    margin: 0 auto;
+  }
+
+  .contacts__container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact__form{
+    width: 577px;
+    margin: 0;
+  }
+
+  .form__input{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text__message{
+    width: 577px;
+  }
+
+  .form__button{
+    margin-right: 0;
+  }
+
+  .footer-text{
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+  .footer {
+    background-image: url(../../images/footer/bg@2x.png);
+  }
+}

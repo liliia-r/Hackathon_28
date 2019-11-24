@@ -21,4 +21,5 @@
 
 $icons: bell, board, hub, share, star, thumb;
 
-@include generate-pseudo-icons('services__icon--', $icons, '../images/features-icons/icon-', 'svg');
+
+// @include generate-pseudo-icons('services__icon--', $icons, '../images/features-icons/icon-', 'svg');

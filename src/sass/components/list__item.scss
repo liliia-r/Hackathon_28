@@ -1,0 +1,42 @@
+.list__item {
+  display: flex;
+  width: 300px;
+  margin: 0;
+
+  &::before {
+    @include pseudo ();
+    width: 30px;
+    height: 30px;
+    margin-right: 26px;
+    margin-top: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@include generate-pseudo-icons('list__item--', $icons, '../images/features-icons/icon-', 'svg');
+
+.box {
+  width: 220px;
+  display: inline-block;
+}
+
+.item__text {
+  text-align: justify;
+  font-size: 13px;
+  line-height: $main-font-height;
+  color: $main-font-color;
+  font-family: $main-font-stack;
+  font-weight: 400;
+}
+
+
+@media (min-width: 480px) {
+  .list__item {
+    width: 340px;
+  }
+
+  .box {
+    width: 290px;
+  }
+}

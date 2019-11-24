@@ -7,4 +7,13 @@
 @import './fonts';
 @import './base';
 
-@import'./components/customers.scss';
+/*             features                */
+@import './components/header.scss';
+@import './components/section__heading';
+@import './components/section__subtitle';
+@import './components/features__list';
+@import './components/list__item';
+@import './components/video';
+@import './components/team';
+@import './components/customers.scss';
+@import './components/footer';
