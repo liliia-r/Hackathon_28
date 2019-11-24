@@ -61,7 +61,7 @@
 
 
 
-h2, h4, p {
+.head_align-center, .team__title, .section__subtitle, .team__deskr, .team-name, .team-position {
     text-align: center;
 }
 
@@ -100,8 +100,9 @@ h2, h4, p {
 }
 
 @media (min-width: 768px){
-    .container{
+    .team{
         width: 668px;
+        margin: 0 auto;
     }
     .team__list {
         width: 650px;
@@ -113,9 +114,8 @@ h2, h4, p {
 }
 
 @media (min-width: 1200px) {
-    .container {
+    .team {
         width: 1145px;
-        margin: 0 auto;
     }
     
     .team__list{
