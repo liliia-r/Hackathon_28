@@ -25,14 +25,14 @@
   color: $white-color;
   margin-bottom: 25px;
   font-family: $main-font-stack;
-  font-size: $main-font-size;
+  font-size: 16px;
   line-height: 26px;
   box-shadow: 1px 1px 47px -33px $shadow-text-color;
 }
 
 .video-section__title {
   font-family: $secondary-font-stack;
-  font-size: $descr-font-size;
+  font-size: 18px;
   text-transform: uppercase;
   padding: 20px 0;
 }
@@ -137,4 +137,3 @@
     flex-wrap: nowrap;
   }
 }
-
