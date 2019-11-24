@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font-stack;
+  font-size: $main-font-size;
+  line-height: $main-font-height;
+  color: $main-font-color;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+} 
+
+.list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
