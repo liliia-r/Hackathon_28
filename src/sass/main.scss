@@ -15,14 +15,8 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-@import './helpers/variables';
-@import './helpers/mixins';
-@import './normalize';
-@import './fonts';
-@import './base';
+@import './components/video.scss'
 
 
 @import './components/customers';
 @import './components/footer';
-@import './components/vodeo';
->>>>>>> develop
