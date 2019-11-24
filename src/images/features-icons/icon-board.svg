@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg enable-background="new 0 0 384 384" version="1.1" viewBox="0 0 384 384" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-		<path fill="#1ab798" d="M298.667,277.333L213.333,192v-67.84C238.08,115.2,256,91.733,256,64c0-35.413-28.587-64-64-64s-64,28.587-64,64    c0,27.733,17.92,51.2,42.667,60.16V192l-85.333,85.333H0V384h106.667v-65.067l85.333-89.6l85.333,89.6V384H384V277.333H298.667z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 28" width="30" height="28">
+	<defs>
+		<image width="30" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAMAAABBJv+bAAAAAXNSR0IB2cksfwAAADNQTFRFGreYGreYGreYGreYGreYGreYGreYGreYGreYGreYGreYGreYGreYGreYGreYGreYGreY2XrXXwAAABF0Uk5TABVogCzo/y3LzP1A+sor52mBNRniAAAAf0lEQVR4nK2TSw6AIAxEy68qgnL/02qhQRclqDirpo8Mk1IAlDaStAKSdSjLTYTnBkVcCHtE0RzREz6PgSTuP8LsuHJR+lQUzGkMF7UzgDvmV7SK5eQVf0p+9xRwHctY8hf4r5l3HvTrtoTmKgbCEVuKhLe9QZ3Nl6gkmqf8iQ75sAv7xofLqQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="icon board" href="#img1" x="0" y="0" />
 </svg>
