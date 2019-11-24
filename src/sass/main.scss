@@ -1,8 +1,10 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-@import './helpers/variables';
-@import './helpers/mixins';
-@import './normalize';
-@import './fonts';
-@import './base';
+@import './helpers/variables.scss';
+@import './helpers/mixins.scss';
+@import './normalize.scss';
+@import './fonts.scss';
+@import './base.scss';
+@import './team.scss';
+
