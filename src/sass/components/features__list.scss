@@ -1,8 +1,13 @@
+.section__features{
+  padding-top: 50px;
+  padding-bottom: 56px;
+}
+
 .features__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .list-wrap {
@@ -17,15 +22,10 @@
   display: none;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .list-wrap {
     margin-bottom: 20px;
-    justify-content: center;
-  }
-
-  .features__list {
-    padding-right: 20px;
-    padding-left: 20px;
+    justify-content: space-around;
   }
 }
 
