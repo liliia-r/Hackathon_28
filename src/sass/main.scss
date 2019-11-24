@@ -7,5 +7,12 @@
 @import './fonts';
 @import './base';
 
-@import './components/header.scss';
-@import './components/footer';
+/*             features                */
+@import './components/section__heading';
+@import './components/section__subtitle';
+@import './components/features__list';
+@import './components/list__item';
+
+@import './components/customers';
+@import './components/footer'
+
