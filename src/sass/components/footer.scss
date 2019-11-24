@@ -5,46 +5,17 @@
   background-position: center;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.section__heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 36px;
-  color: $color-primary-accents;
-  font-family: $secondary-font-stack;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  padding-top: 56px;
-
-  &::before {
-    @include pseudo();
-    margin-right: 16px;
-    width: 60px;
-    height: 2px;
-    background-color: $white-color;
-  }
-
-  &::after {
-    @include pseudo();
-    margin-left: 16px;
-    width: 60px;
-    height: 2px;
-    background-color: $white-color;
-  }
-}
-
-
 .footer__heading {
   color: $white-color;
   padding-bottom: 45px;
+  
+  &::before {
+    background-color: $white-color;
+  }
+  
+  &::after {
+    background-color: $white-color;
+  }
 }
 
 .contacts__container {
