@@ -1,74 +1,132 @@
+.team__list {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .icon {
-    height: 20px;
-}
-
-ul {
-    list-style: none;
-    color:red;
-}
-
-.section__heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: $title-font-size;
-    line-height: 36px;
-    color: $color-primary-accents;
-    font-family: $secondary-font-stack;
-    font-weight: 700;
-    text-align: center;
-
-    &::before{
-        @include pseudo();
-        margin-right: 16px;
-        width: 60px;
-        height: 2px;
-        background-color: #558888;
-    }
-    &::after{
-        @include pseudo();
-        margin-left: 16px;
-        width: 60px;
-        height: 2px;
-        background-color: #558888 ;
-    }
+  height: 20px;
 }
 
 .team__item {
-    width: 270px;
-    position: relative;
+  width: 270px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.team__title,
+.team__deskr {
+  color: $white-color;
+  display: block;
+  margin: 0;
+}
+
+.team__title {
+  padding: 20px;
+}
+
+.team__deskr {
+  padding: 0 20px 40px;
 }
 
 .overlay {
-    width:270px;
-    height: 300px;
-    position: absolute;
+  width: 270px;
+  height: 300px;
+  position: absolute;
+  background-color: $color-primary-accents;
+  opacity: 0;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
-h4, p {
-    text-align: center;
+.team__item:hover .team-name {
+  color: $color-primary-accents;
+}
+
+.team-name {
+  font-size: 20px;
+  margin: 20px auto 10px;
+}
+
+.team-position {
+  color: $secondary-font-color;
+  margin: 0 auto 50px;
+}
+
+
+
+.head_align-center,
+.team__title,
+.section__subtitle,
+.team__deskr,
+.team-name,
+.team-position {
+  text-align: center;
 }
 
 .socials {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    width: 134px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 134px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .socials__item {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    background-color: palevioletred;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #177a67;
+  text-align: center;
+  line-height: 40px;
+
+  &:hover {
+    background-color: $main-font-color;
+  }
 }
-
-
 
 .social__link {
-    background-image: url(../);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.social__link img {
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .team {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .team__list {
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    width: 1145px;
+  }
+
+  .team__list {
+    width: 100%;
+  }
+}
