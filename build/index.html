@@ -45,7 +45,14 @@
                           <li class="introduce__item">Integer ut mattis nulla, eget vehicula elit </li>
                           <li class="introduce__item">Praesent rutrum ac nunc et</li>
                       </ul>
-                      <button class="introduce__bttn">Download</button>
+                      <button class="introduce__bttn">
+                              <svg class="introduce__bttn--img" id="cloud" viewbox="0 0 24 24">
+                                  <path d="M0 0h24v24H0z" fill="none"/>
+                                  <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+                              </svg>
+                              <span class="introduce__bttn--txt">Download</span>
+      
+                              </button>
                   </div>
                   <img class="introduce__first-phone" srcset="images/6S.png 382w, images/6S@2x.png 762w"
                   sizes="382px" src="images/6S.png" height="663" alt="6S">
@@ -58,12 +65,8 @@
       <main>
       
           <section class="container section__features">
-                  <h2 class="section__heading">
-                  KEY FEATURES
-                  </h2>
-                  <p class="section__subtitle">
-                  Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
-                  </p>
+                  <h2 class="section__heading">KEY FEATURES</h2>
+                  <p class="section__subtitle">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet lectus non lacus sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
                   <div class="list-wrap">
                           <ul class="list features__list">
                                   <li class="list__item list__item--board">
@@ -297,16 +300,33 @@
                   <img  class="customers__image" srccet="./images/jon.png 100w ./images/jon@2x.png 200w"  sizes="100w" src="./images/jon.png" alt="Jon Doe" height="100px">
                   <h3 class="customers__name">Jon Doe</h3>
                   <p class="customer__occupation">Company Inc.</p>
-                  <p class="customer__about">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero nec sapien condimentum dignissim. 
-                      Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis nibh tempus, vel viverra dolor pretium. 
-                      Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id
-                  </p>
-                  <ul class="slider">
-                      <li class="slider__dots"></li>
-                      <li class="slider__dots"></li>
-                      <li class="slider__dots"></li>
-                      <li class="slider__dots"></li>
-                  </ul>
+                  <div class="container wrapper">
+                      <input type="radio" name="point" id="slide1" checked>
+                      <input type="radio" name="point" id="slide2">
+                      <input type="radio" name="point" id="slide3">
+                      <input type="radio" name="point" id="slide4">
+                      <input type="radio" name="point" id="slide5">
+                      <div class="slider__list">
+                        <div class="slides slide1">
+                          <p class="slide__text-box">Vestibulum placerat nisl guis justo venenatis, et lacinia nunc venenatis. semper liberonec sapien condimenton dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis <span class="desktop-text">nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id</span></p>
+                        </div>
+                        <div class="slides slide2">
+                          <p class="slide__text-box">Vestibulum placerat nisl guis justo venenatis, et lacinia nunc venenatis. semper liberonec sapien condimenton dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis <span class="desktop-text">nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id</span></p>
+                        </div>
+                        <div class="slides slide3">
+                          <p class="slide__text-box">Vestibulum placerat nisl guis justo venenatis, et lacinia nunc venenatis. semper liberonec sapien condimenton dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis <span class="desktop-text">nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id</span></p>
+                        </div>
+                        <div class="slides slide4">
+                          <p class="slide__text-box">Vestibulum placerat nisl guis justo venenatis, et lacinia nunc venenatis. semper liberonec sapien condimenton dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique eros quis <span class="desktop-text">nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean gravida massa et ante pulvinar, id</span></p>
+                        </div>
+                      </div>
+                      <div class="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                      </div>
+                  </div>
               </div>       
           </section>
     
@@ -324,19 +344,27 @@
                   lacus fringilla nulla sollicitudin tristique.</p>
         
                 <ul class="footer__social list">
-                  <li class="footer__social-icon icon-facebook">
-                    <a href="#" class="footer__social-link">
-                        <img class="footer__icon" src="./images/socials/icon-facebook.svg" alt="">
+                  <li class="footer__social-icon icon-facebook footer__social-link">
+                      <a class= "footer__icon" href="#">
+                          <svg class="icon-facebook" width="20px" height="20px" enable-background="new 0 0 470 470" version="1.1" viewbox="0 0 470.513 470.513" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#fff" d="m271.52 154.17v-40.541c0-6.086 0.28-10.8 0.849-14.13 0.567-3.335 1.857-6.615 3.859-9.853 1.999-3.236 5.236-5.47 9.706-6.708 4.476-1.24 10.424-1.858 17.85-1.858h40.539v-81.08h-64.809c-37.5 0-64.433 8.897-80.803 26.691-16.368 17.798-24.551 44.014-24.551 78.658v48.82h-48.542v81.086h48.539v235.26h97.362v-235.26h64.805l8.566-81.086h-73.37z"/>
+                          </svg>
+                  </a>
+                  </li>
+                  <li class="footer__social-icon icon-twitter footer__social-link">
+                    <a href="#" class="footer__icon">
+                        <svg class="icon-twitter" width="20px" height="20px" enable-background="new 0 0 512 512" version="1.1" viewbox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                          <path fill="#fff" d="m512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408-19.264-20.512-46.72-33.216-76.672-33.216-58.112 0-104.9 47.168-104.9 104.99 0 8.32 0.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.35-109.79-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-0.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.14-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-0.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.14 44.768-8.608 0-16.864-0.384-25.12-1.44 46.496 29.984 101.6 47.104 161.02 47.104 193.15 0 298.75-160 298.75-298.69 0-4.64-0.16-9.12-0.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"/>
+                      </svg>
                     </a>
                   </li>
-                  <li class="footer__social-icon icon-twitter">
-                    <a href="#" class="footer__social-link">
-                        <img class="footer__icon" src="./images/socials/icon-twitter.svg" alt="">
-                    </a>
-                  </li>
-                  <li class="footer__social-icon icon-linkedin">
-                    <a href="#" class="footer__social-link">
-                        <img class="footer__icon" src="./images/socials/icon-linkedin.svg" alt="">
+                  <li class="footer__social-icon icon-linkedin footer__social-link">
+                    <a href="#" class="footer__icon">
+                        <svg class="icon-linkedin" width="20px" height="20px" enable-background="new 0 0 512 512" version="1.1" viewbox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                          <rect fill="#fff" y="160" width="114.5" height="352"/>
+                          <path fill="#fff" d="m426.37 164.13c-1.216-0.384-2.368-0.8-3.648-1.152-1.536-0.352-3.072-0.64-4.64-0.896-6.08-1.216-12.736-2.08-20.544-2.08-66.752 0-109.09 48.544-123.04 67.296v-67.296h-114.5v352h114.5v-192s86.528-120.51 123.04-32v224h114.46v-237.54c0-53.184-36.448-97.504-85.632-110.34z"/>
+                          <circle fill="#fff" cx="56" cy="56" r="56"/>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -346,7 +374,7 @@
               </div>
         
         
-              <form action="#" class="contact__form form_container" method="GET">
+              <form action="#" class="contact__form form__container" method="GET">
                 <div class="form__input">
                   <input class="inputs" type="name" placeholder="Name" name="user_name" required autocomplete="off">
                   <input class="inputs" type="email" placeholder="Email" name="user_email" required autocomplete="off">
@@ -364,9 +392,9 @@
           
         </div>
         
-        <div class="footer-page">
+        <div class="footer__page">
             <div class="container">
-                <p class="footer-text">© 2019 GoIteens Template. All Rights Reserved</p>
+                <p class="footer__text">© 2019 GoIteens Template. All Rights Reserved</p>
             </div>
         </div>
         

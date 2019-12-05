@@ -11,7 +11,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .background__container {
-    background-image: url(../images/bg.png);
+    background-image: url(../images/bcg_header@2x.png);
   }
 }
 
@@ -108,11 +108,12 @@
   }
 
   &__bttn {
-    width: 211px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
     height: 50px;
     background-color: $color-primary-accents;
-    background-image: url(../images/cloud.png);
-    background-repeat: no-repeat;
     background-position: 22px;
     color: $white-color;
     border: 1px solid $color-primary-accents;
@@ -121,12 +122,23 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 50px;
-    padding-left: 50px;
     margin-left: 15px;
     cursor: pointer;
 
     &:hover {
-      border: 3px solid $white-color;
+      border: 2px solid $white-color;
+    }
+
+    .introduce__bttn--img {
+      width: 40px;
+      fill: $white-color;
+    }
+
+    .introduce__bttn--txt {
+      padding-left: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      color: $white-color;
     }
   }
 
